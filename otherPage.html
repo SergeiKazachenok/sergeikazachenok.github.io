@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergei Kazachenok - Details</title>
+    <link rel="stylesheet" href="otherPage.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="navigation-link">Main page</a>
+        <a href="otherPage.html" class="navigation-link">Other page</a>
+    </nav>
+    
+    <div class="content-wrapper">
+        <header class="page-header">
+            <h1>Sergei Kazachenok</h1>
+            <p class="subtitle">Computer Science Student & Developer</p>
+            <div class="theme-toggle">
+                <button id="themeBtn" class="theme-btn">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="skills-section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category" data-skill="java">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>Python (Basic)</li>
+                        </ul>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-skill="web">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Frontend Development</li>
+                            <li>Responsive Design</li>
+                            <li>Git Version Control</li>
+                            <li>Web APIs</li>
+                        </ul>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-level="75"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-skill="tools">
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li>Cursor</li>
+                            <li>GitHub</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>Chrome DevTools</li>
+                        </ul>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-level="80"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Computer Science</h3>
+                    <p class="institution">Brooklyn College</p>
+                    <p class="period">2023 - Present</p>
+                    <p class="description">Currently pursuing a degree in Computer Science with focus on software development and problem-solving.</p>
+                </div>
+            </section>
+
+            <section class="projects-section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="portfolio">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Built a responsive personal website using HTML, CSS, and JavaScript to showcase skills and experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="project-card" data-project="java">
+                        <h3>Java Applications</h3>
+                        <p>Developed various Java applications including data structures, algorithms, and object-oriented programming projects.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interests-section">
+                <h2>Interests & Hobbies</h2>
+                <div class="interests-grid">
+                    <div class="interest-item" data-interest="tech">
+                        <h3>Technology</h3>
+                        <p>Passionate about emerging technologies, software development trends, and building practical solutions.</p>
+                        <div class="interest-icon">💻</div>
+                    </div>
+                    <div class="interest-item" data-interest="fitness">
+                        <h3>Fitness</h3>
+                        <p>Maintaining an active lifestyle through regular exercise and physical activities.</p>
+                        <div class="interest-icon">💪</div>
+                    </div>
+                    <div class="interest-item" data-interest="learning">
+                        <h3>Learning</h3>
+                        <p>Constantly expanding knowledge through online courses, coding challenges, and hands-on projects.</p>
+                        <div class="interest-icon">📚</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Get In Touch</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <span class="contact-email" data-email="kazacenoksergej50@gmail.com">kazacenoksergej50@gmail.com</span></p>
+                    <p><strong>Phone:</strong> <span class="contact-phone" data-phone="+1 347 444 6921">+1 347 444 6921</span></p>
+                    <p><strong>Location:</strong> Brooklyn, NY</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" class="social-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sergei-kazachenok-0a356a290/" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" target="_blank" class="social-link">Indeed</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <div class="status-badge">
+        <span class="status-dot"></span>
+        Available for Internships
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
